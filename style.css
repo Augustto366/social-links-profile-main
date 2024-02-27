@@ -26,6 +26,7 @@ body, html {
     padding: 10px;
     width: 100%;
     height: 100vh;
+    background-color: hsl(0, 0%, 8%);
 }
 
 .inside-block {
@@ -34,12 +35,17 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    width: 400px;
-    height: 600px;
+    border-radius: 10px;
+    width: 340px;
+    height: 540px;
     background-color: hsl(0, 0%, 12%);
 }
 
 .inside-block > img {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -47,19 +53,64 @@ body, html {
 
 .inside-block > h1 {
     font-family: inter;
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
     color: hsl(0, 0%, 100%);
 }
 
 .inside-block > strong > p {
+    position: absolute;
+    left: 50%;
+    top: 165px;
+    transform: translate(-50%);
     font-family: intersemi;
     font-size: 14px;
     color: hsl(75, 94%, 57%);
 }
 
 .inside-block > p {
+    position: absolute;
+    left: 50%;
+    top: 210px;
+    transform: translate(-50%);
+    font-family: intersemi;
+    font-size: 14px;
+    text-align: center;
+    width: 280px;
+    color: hsl(0, 0%, 55%);
+}
+
+.inside-block > .botao {
+    position: relative;
+    left: 50%;
+    top: 225px;
+    transform: translate(-50%);
+    margin-bottom: 12px;
+    background-color: hsl(0, 0%, 20%);
+    width: 95%;
+    height: 43px;
+    border-radius: 6px;
+    border: none;
+}
+
+.botao > a {
     font-family: inter;
     font-size: 14px;
-    color: hsl(0, 0%, 20%);
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.botao:hover, .botao > a:hover {
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+    font-family: intersemi;
+    color:  hsl(0, 0%, 8%);
+    transition: 0.2s ease-in-out;
 }
 
 
